@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anc" prefHeight="700.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="BrowserController">
+  <children>
+    <TextField fx:id="txt" layoutY="91.0" prefHeight="25.0" prefWidth="519.0" promptText="Enter URL" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="145.0" />
+    <Button fx:id="bt_online" layoutY="91.0" mnemonicParsing="false" mouseTransparent="false" onAction="#handle" prefHeight="27.0" prefWidth="48.0" text="On" AnchorPane.rightAnchor="90.0" />
+    <WebView fx:id="webView" prefHeight="396.0" prefWidth="468.0" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="240.0" AnchorPane.topAnchor="127.0" />
+    <TextField fx:id="tv_username" editable="false" layoutY="24.0" prefWidth="272.0" AnchorPane.leftAnchor="120.0" />
+    <CheckBox fx:id="incognito_mode" alignment="CENTER_LEFT" contentDisplay="LEFT" layoutY="24.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="151.0" text="Incognito Mode" AnchorPane.rightAnchor="44.0" />
+    <Button fx:id="bt_back" layoutY="91.0" minWidth="33.0" mnemonicParsing="false" onAction="#goBackward" prefHeight="27.0" prefWidth="48.0" text="&lt;-" wrapText="true" AnchorPane.leftAnchor="14.0">
+      <font>
+        <Font name="System Bold" size="15.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Button fx:id="bt_fwd" font="$x1" layoutY="91.0" minWidth="33.0" mnemonicParsing="false" onAction="#goForward" prefHeight="27.0" prefWidth="48.0" text="-&gt;" wrapText="true" AnchorPane.leftAnchor="62.0" />
+    <TextField editable="false" layoutY="25.0" prefWidth="88.0" text="Username" AnchorPane.leftAnchor="22.0" />
+    <Button fx:id="bt_offline" layoutY="91.0" mnemonicParsing="false" onAction="#getOfflineData" prefHeight="27.0" prefWidth="48.0" text="Off" AnchorPane.rightAnchor="29.0" />
+    <TextField editable="false" prefHeight="20.0" prefWidth="113.0" text="Last updated" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="14.0" />
+    <TextField fx:id="tv_lastupdate" editable="false" prefHeight="20.0" prefWidth="238.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="140.0" />
+    <Button fx:id="show_caches" mnemonicParsing="false" onAction="#showAllCache" prefWidth="141.0" text="Show all cache" AnchorPane.bottomAnchor="43.0" AnchorPane.rightAnchor="33.0">
+      <font>
+        <Font name="System Bold" size="13.0" />
+      </font>
+    </Button>
+    <TextArea fx:id="tv_all_links" editable="false" prefHeight="496.0" prefWidth="230.0" wrapText="true" AnchorPane.bottomAnchor="77.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="127.0" />
+    <TextField id="tv_lastupdate" fx:id="tv_status" editable="false" prefHeight="20.0" prefWidth="300.0" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="5.0" />
+  </children>
+</AnchorPane>

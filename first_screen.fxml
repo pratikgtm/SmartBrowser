@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anc" prefHeight="700.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="FirstScreenController">
+  <TextField editable="false" layoutY="25.0" prefWidth="132.0" text="Enter Username" AnchorPane.leftAnchor="28.0" />
+  <TextField fx:id="home_username" editable="true" layoutY="24.0" prefWidth="272.0" AnchorPane.leftAnchor="182.0" />
+  <Line endX="652.2000122070312" endY="0.0" layoutY="75.0" startX="-100.0" AnchorPane.leftAnchor="28.3" AnchorPane.rightAnchor="28.3" />
+  <TextField editable="false" layoutY="243.0" prefWidth="132.0" text="Proxy Addr" AnchorPane.leftAnchor="29.0" />
+  <TextField fx:id="home_proxy" editable="true" layoutY="243.0" prefWidth="272.0" AnchorPane.leftAnchor="183.0" />
+  <TextField editable="false" layoutY="85.0" prefWidth="132.0" text="Bcast Addr" AnchorPane.leftAnchor="29.0" />
+  <TextField fx:id="home_bcast" editable="true" layoutY="84.0" prefWidth="272.0" AnchorPane.leftAnchor="183.0" />
+  <TextField editable="false" layoutY="274.0" prefWidth="132.0" text="Port" AnchorPane.leftAnchor="30.0" />
+  <TextField fx:id="home_port" editable="true" layoutY="273.0" prefWidth="272.0" AnchorPane.leftAnchor="184.0" />
+  <TextField editable="false" layoutY="305.0" prefWidth="132.0" text="Auth Username" AnchorPane.leftAnchor="30.0" />
+  <TextField fx:id="home_auth_username" editable="true" layoutY="304.0" prefWidth="272.0" AnchorPane.leftAnchor="184.0" />
+  <TextField editable="false" layoutY="337.0" prefWidth="132.0" text="Auth Password" AnchorPane.leftAnchor="30.0" />
+  <TextField fx:id="home_auth_password" editable="true" layoutY="336.0" prefWidth="272.0" AnchorPane.leftAnchor="184.0" />
+  <Button fx:id="home_connect" layoutY="334.0" mnemonicParsing="false" onAction="#home_connect_action" text="Connect" AnchorPane.rightAnchor="67.0">
+    <font>
+      <Font name="System Bold" size="13.0" fx:id="x1" />
+    </font>
+  </Button>
+  <Line endX="648.0028686523438" endY="1.0" layoutY="377.0" startX="-100.0" AnchorPane.leftAnchor="25.29" AnchorPane.rightAnchor="31.31" />
+  <TextArea fx:id="home_dashboard" layoutY="398.0" prefWidth="628.4142150878906" wrapText="true" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="27.01" />
+  <Button fx:id="home_next" font="$x1" layoutY="619.0" mnemonicParsing="false" onAction="#home_next_action" text="Next" AnchorPane.rightAnchor="31.0" />
+  <Line endX="648.0028686523438" endY="1.0" layoutY="229.0" startX="-100.0" AnchorPane.leftAnchor="25.29" AnchorPane.rightAnchor="31.31" />
+  <TextField editable="false" layoutY="159.0" prefWidth="132.0" text="Username of Peer" AnchorPane.leftAnchor="30.0" />
+  <TextField id="home_bcast" fx:id="home_conn_username" editable="true" layoutY="158.0" prefWidth="272.0" AnchorPane.leftAnchor="184.0" />
+  <TextField editable="false" layoutY="187.0" prefWidth="132.0" text="IP of Peer" AnchorPane.leftAnchor="31.0" />
+  <TextField id="home_bcast" fx:id="home_conn_ip" editable="true" layoutY="186.0" prefWidth="272.0" AnchorPane.leftAnchor="185.0" />
+  <Text layoutX="161.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR">
+    <font>
+      <Font size="16.0" />
+    </font>
+  </Text>
+</AnchorPane>
