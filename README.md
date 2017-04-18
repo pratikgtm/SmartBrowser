@@ -3,7 +3,7 @@ Presently, web browsers don't contact with each other for sharing web cache. So 
 
 But if each browser cooperates with each other, a node will try to find web resource in the other node when hit in local web cache misses.
 
-This project aims at implementing **"A Distributed Browser-level Web Caching System Based on Chord".**
+This project aims at implementing **"A Cooperative Browser-level Web Caching System Based on Chord".**
 
 Chord is a protocol and algorithm for a peer-to-peer distributed hash table. By implementing cooperative caching based on Chord, we intend to increase cache hit. Accordingly, decreasing the time required for loading the webpage's content.
 
